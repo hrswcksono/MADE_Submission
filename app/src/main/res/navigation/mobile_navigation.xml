@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        android:name="com.dicoding.submissionmade.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_nav_home_to_detailMovieActivity"
+            app:destination="@id/detailMovieActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_favorite"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        android:name="com.dicoding.submissionmade.favorite.FavoriteFragment"
+        app:moduleName="Submission_MADE.favorite"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_nav_favorite_to_detailMovieActivity"
+            app:destination="@id/detailMovieActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/detailMovieActivity"
+        android:name="com.dicoding.submissionmade.detail.DetailMovieActivity"
+        android:label="content_detail_movie"
+        tools:layout="@layout/content_detail_movie" >
+        <argument
+            android:name="movie"
+            app:argType="com.dicoding.submissionmade.core.domain.model.Movie" />
+    </activity>
+
+</navigation>
