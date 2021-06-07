@@ -24,7 +24,7 @@ buildscript {
     ext.kotlin_coroutines_version_android = "1.4.3"
     ext.lifecycle_version = "2.3.1"
 
-    ext.koin_version = "3.0.2"
+    ext.koin_version = "2.2.2"
 
     ext.nav_version = "2.3.5"
 
@@ -32,7 +32,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
@@ -48,7 +47,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
