@@ -32,9 +32,10 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.2.1"
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
 
@@ -47,6 +48,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
         maven {
             url "https://maven.google.com"
         }
