@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.dicoding.submissionmade.R
 import com.dicoding.submissionmade.core.domain.model.Movie
 import com.dicoding.submissionmade.databinding.ActivityDetailMovieBinding
-import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DetailMovieActivity : AppCompatActivity() {
 

@@ -11,7 +11,7 @@ import com.dicoding.submissionmade.R
 import com.dicoding.submissionmade.core.data.Resource
 import com.dicoding.submissionmade.core.ui.MovieAdapter
 import com.dicoding.submissionmade.databinding.FragmentHomeBinding
-import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
 

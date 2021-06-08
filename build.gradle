@@ -24,7 +24,7 @@ buildscript {
     ext.kotlin_coroutines_version_android = "1.4.3"
     ext.lifecycle_version = "2.3.1"
 
-    ext.koin_version = "2.2.2"
+    ext.koin_version = "2.2.3"
 
     ext.nav_version = "2.3.5"
 
@@ -32,10 +32,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath 'com.android.tools.build:gradle:4.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
 
@@ -48,9 +50,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter()
         maven {
-            url "https://maven.google.com"
+            url "https://plugins.gradle.org/m2/"
         }
     }
 }
