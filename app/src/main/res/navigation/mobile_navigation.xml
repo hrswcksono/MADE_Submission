@@ -12,7 +12,7 @@
         app:popEnterAnim="@anim/nav_default_pop_enter_anim"
         app:popExitAnim="@anim/nav_default_pop_exit_anim"
         android:name="com.dicoding.submissionmade.home.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="Home" >
         <action
             android:id="@+id/action_nav_home_to_detailMovieActivity"
             app:destination="@id/detailMovieActivity" />
@@ -25,7 +25,7 @@
         app:popExitAnim="@anim/nav_default_pop_exit_anim"
         android:name="com.dicoding.submissionmade.favorite.FavoriteFragment"
         app:moduleName="Submission_MADE.favorite"
-        android:label="FavoriteFragment" >
+        android:label="Favorite" >
         <action
             android:id="@+id/action_nav_favorite_to_detailMovieActivity"
             app:destination="@id/detailMovieActivity" />
