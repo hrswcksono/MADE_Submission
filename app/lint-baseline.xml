@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.2.1">
+
+    <issue
+        id="FragmentTagUsage"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <location
+            file="src\main\res\layout\content_main.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup. More info: https://developer.android.com/training/backup/autosyncapi.html">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/nav_movie` with a theme that also paints a background (inferred theme is `@style/Theme.SubmissionMADE`)">
+        <location
+            file="..\app\src\main\res\layout\nav_header_main.xml"
+            line="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.side_nav_bar` appears to be unused">
+        <location
+            file="..\app\src\main\res\drawable\side_nav_bar.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.slide_in_right` appears to be unused">
+        <location
+            file="..\app\src\main\res\anim\slide_in_right.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.slide_out_left` appears to be unused">
+        <location
+            file="..\app\src\main\res\anim\slide_out_left.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/nav_movie.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\nav_movie.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/side_nav_bar.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\side_nav_bar.png"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\content_detail_movie.xml"
+            line="16"/>
+    </issue>
+
+</issues>
