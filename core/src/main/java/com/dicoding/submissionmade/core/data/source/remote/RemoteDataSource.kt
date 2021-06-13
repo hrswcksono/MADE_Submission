@@ -16,7 +16,7 @@ class RemoteDataSource (private val apiService: ApiService){
     suspend fun getAllMovie(): Flow<ApiResponse<List<MovieResponse>>> {
         return flow {
             try {
-                val response = apiService.getTopRatedMovie(BuildConfig.API_KEY)
+                val response = apiService.getTopRatedMovie("d255610c689db824e696324f5c705e3b")
                 val data = response.results
                 if (data.isNotEmpty()){
                     emit(ApiResponse.Success(response.results))
