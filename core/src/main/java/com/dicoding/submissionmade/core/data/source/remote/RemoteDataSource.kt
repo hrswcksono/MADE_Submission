@@ -1,7 +1,6 @@
 package com.dicoding.submissionmade.core.data.source.remote
 
 import android.util.Log
-import com.dicoding.submissionmade.core.BuildConfig
 import com.dicoding.submissionmade.core.data.source.remote.network.ApiResponse
 import com.dicoding.submissionmade.core.data.source.remote.network.ApiService
 import com.dicoding.submissionmade.core.data.source.remote.response.MovieResponse
@@ -13,11 +12,10 @@ import java.lang.Exception
 
 class RemoteDataSource (private val apiService: ApiService){
 
-
     suspend fun getAllMovie(): Flow<ApiResponse<List<MovieResponse>>> {
         return flow {
             try {
-                val response = apiService.getTopRatedMovie("d255610c689db824e696324f5c705e3b")
+                val response = apiService.getTopRatedMovie()
                 val data = response.results
                 if (data.isNotEmpty()){
                     emit(ApiResponse.Success(response.results))

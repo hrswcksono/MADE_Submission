@@ -1,29 +1,15 @@
 <resources>
     <string name="app_name">Submission MADE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail_movie">DetailMovieActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="menu_home">Menu</string>
     <string name="menu_favorite">Favorite</string>
     <string name="image_description">overview</string>
-    <string name="text_subtitle">ss</string>
     <string name="title_favorite">Module Title</string>
 
     <string name="date">Date</string>
     <string name="popularity">Popularity</string>
     <string name="vote_average">Vote Average</string>
 
-    <string name="no_data">Empty data</string>
     <string name="something_wrong">Oops.. something went wrong</string>
 </resources>
