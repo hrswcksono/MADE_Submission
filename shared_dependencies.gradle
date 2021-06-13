@@ -20,14 +20,6 @@ dependencies {
 // Koin AndroidX ViewModel features
     implementation "io.insert-koin:koin-androidx-viewmodel:$koin_version"
 
-    //navigation
-    // Kotlin
-    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
-
-    // Feature module Support
-    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
-
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
 }
