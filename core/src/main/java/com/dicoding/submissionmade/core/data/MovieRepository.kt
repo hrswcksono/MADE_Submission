@@ -33,8 +33,8 @@ class MovieRepository (
                 val movieList = DataMapper.mapResponsesToEntities(data)
                 localDataSource.insertMovie(movieList)
             }
-
         }.asFlow()
+
 
     override fun getFavoriteMovie(): Flow<List<Movie>> {
         return localDataSource.getFavoriteMovie().map { DataMapper.mapEntitiesToDomain(it) }

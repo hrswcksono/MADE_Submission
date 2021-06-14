@@ -30,6 +30,8 @@ class DetailMovieActivity : AppCompatActivity() {
     private fun showDetailTourism(detailMovie: Movie?) {
         detailMovie?.let {
             supportActionBar?.title = detailMovie.title
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
             binding.content.tvOview.text = detailMovie.overview
             binding.content.tvReleaseDate.text = detailMovie.releaseDate
             binding.content.tvPopularity.text = detailMovie.popularity.toString()
@@ -56,5 +58,10 @@ class DetailMovieActivity : AppCompatActivity() {
         } else {
             binding.fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_not_favorite_white))
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

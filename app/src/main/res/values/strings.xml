@@ -12,4 +12,7 @@
     <string name="vote_average">Vote Average</string>
 
     <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="search">Search</string>
+    <string name="sort_by_id">Sort by Title</string>
+    <string name="sort_by_date">Sort by Date</string>
 </resources>
