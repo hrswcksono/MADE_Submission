@@ -58,6 +58,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun showData(movie: Resource<List<Movie>>, key: String) {
+        binding.rvMovie.removeAllViews()
+        binding.rvMovie.invalidate()
         when (movie) {
             is Resource.Loading -> binding.progressBar.visibility = View.VISIBLE
             is Resource.Success -> {
@@ -90,6 +92,7 @@ class HomeFragment : Fragment() {
                 return false
             }
             override fun onQueryTextChange(newText: String): Boolean {
+                binding.rvMovie.removeAllViews()
                 movieAdapter.filter.filter(newText)
                 return false
             }
@@ -113,8 +116,8 @@ class HomeFragment : Fragment() {
     }
 
     override fun onDestroyView() {
+        binding.rvMovie.adapter = null
         super.onDestroyView()
         _binding = null
     }
-
 }

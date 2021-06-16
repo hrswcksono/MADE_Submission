@@ -68,6 +68,4 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "com.intuit.ssp:ssp-android:$ssp_version"
     implementation "com.intuit.sdp:sdp-android:$ssp_version"
-
-    implementation 'androidx.preference:preference:1.1.1'
 }

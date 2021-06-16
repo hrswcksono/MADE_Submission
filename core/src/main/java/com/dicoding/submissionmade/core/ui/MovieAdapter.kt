@@ -30,6 +30,10 @@ class MovieAdapter  : RecyclerView.Adapter<MovieAdapter.ListViewHolder>(), Filte
         notifyDataSetChanged()
     }
 
+    fun clear() {
+        listData.clear()
+    }
+
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
