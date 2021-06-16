@@ -13,15 +13,12 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_list" />
 
-    <TextView
-        android:id="@+id/text_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/favorite_item"
-        android:textSize="25sp"
-        android:textStyle="bold"
+    <include
+        android:id="@+id/view_empty"
+        layout="@layout/view_empty"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/rv_movie"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

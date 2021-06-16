@@ -39,12 +39,8 @@ class FavoriteFragment : Fragment() {
             }
 
             favoriteViewModel.favoriteMovie.observe(viewLifecycleOwner, { data ->
-                if (data.isNotEmpty()){
-                    binding.textMessage.visibility = View.GONE
-                } else {
-                    binding.textMessage.visibility = View.VISIBLE
-                }
                 movieAdapter.setData(data)
+                binding.viewEmpty.root.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
             })
 
             with(binding.rvMovie) {

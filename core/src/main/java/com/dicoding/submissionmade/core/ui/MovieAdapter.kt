@@ -73,6 +73,7 @@ class MovieAdapter  : RecyclerView.Adapter<MovieAdapter.ListViewHolder>(), Filte
                     .into(imgAvatar)
                 textTitle.text = data.title
                 textOverview.text = data.overview
+                textDate.text = data.releaseDate
             }
         }
 
